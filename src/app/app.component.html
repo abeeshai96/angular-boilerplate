@@ -1,8 +1,8 @@
 <style>
   :host {
     font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -11,8 +11,13 @@
   }
 </style>
 
-<div class="content" role="main">
-  <h1>Welcome to {{ title }}!</h1>
-  <h2>Start editing to see some magic happen</h2>
+<div>
+  <h1>API Call Example</h1>
+  <button (click)="fetchData()">Fetch Data</button>
+  <p></p>
+  <button (click)="jsonData = ''">Clear Data</button>
+  <h3>Data in JSON</h3>
+  <pre>{{ jsonData }}</pre>
 </div>
-<router-outlet/>
+
+<router-outlet />
